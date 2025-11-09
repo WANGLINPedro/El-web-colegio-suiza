@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel Decorative', serif;
+    background: #111;
+    color: #eee;
+}
+
+
+header {
+    width: 100%;
+    background: #1a1a1a;
+    padding: 10px 30px 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    border-bottom: 2px solid #333;
+}
+
+.header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo img {
+    height: 120px;
+    margin-top: 10px;
+}
+
+
+.carter img {
+    height: 60px;
+    margin-top: -15px;
+}
+
+.user-cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-cart img {
+    height: 42px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+nav a {
+    color: #eaeaea;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+main img {
+    width: 85%;
+    max-width: 1400px;
+    border: 3px solid #333;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+
+footer {
+    width: 100%;
+    background: #1a1a1a;
+    border-top: 2px solid #333;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #ddd;
+}
+
+
+.mail {
+    text-align: center;
+}
+
+.mail img {
+    height: 40px;
+    margin: 5px 0;
+}
+
+
+.redes {
+    text-align: center;
+}
+
+.redes img {
+    height: 50px;
+    margin-top: 5px;
+}
+
+
+.emoji {
+    text-align: center;
+}
+
+.emoji img {
+    height: 40px;
+    margin: 5px 0;
+}
+
+@media (max-width: 850px) {
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    main img {
+        width: 95%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+}
